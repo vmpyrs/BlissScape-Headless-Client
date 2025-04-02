@@ -16,8 +16,6 @@ public class Launcher {
 	CLIENT_ROUTE = "https://blissscape.com/downloads/BlissScapeClient.jar",
 	CLIENT_EXECUTE = String.format("java -jar %s", CLIENT_PATH);
 	
-	
-	
 	public static void downloadFile(String fileURL, String savePath) throws IOException {
 		URL url = new URL(fileURL);
 		Path targetPath = Paths.get(savePath);
