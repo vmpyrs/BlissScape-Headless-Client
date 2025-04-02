@@ -18,11 +18,11 @@ public class Launcher {
 	
 	
 	
-   public static void downloadFile(String fileURL, String savePath) throws IOException {
-        URL url = new URL(fileURL);
-        Path targetPath = Paths.get(savePath);
-        Files.copy(url.openStream(), targetPath, StandardCopyOption.REPLACE_EXISTING);
-    }
+	public static void downloadFile(String fileURL, String savePath) throws IOException {
+		URL url = new URL(fileURL);
+		Path targetPath = Paths.get(savePath);
+		Files.copy(url.openStream(), targetPath, StandardCopyOption.REPLACE_EXISTING);
+	}
 	
 	public static String transpileStackTrace(Throwable throwable) {
 		StringWriter sw = new StringWriter();
