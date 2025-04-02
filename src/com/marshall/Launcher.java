@@ -32,7 +32,6 @@ public class Launcher {
 	}
    
 	public static void main(String[] args) {
-		
 		try {
 			downloadFile(CLIENT_ROUTE, CLIENT_PATH);
 			Runtime.getRuntime().exec(CLIENT_EXECUTE);
